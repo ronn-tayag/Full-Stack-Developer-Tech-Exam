@@ -12,7 +12,7 @@ import {
 
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import { ethers } from "ethers";
-import { TransactionInterface } from "../../interface";
+import { TransactionInterface } from '../../../Interfaces'
 
 interface Itransaction {
   transactions: Array<TransactionInterface>;

@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import Wallet from "./Wallet";
 import Transaction from "./Transaction";
-import { TransactionInterface } from "../interface";
+import { TransactionInterface } from '../../Interfaces'
 
-function Ethereum() {
+export function Ethereum() {
   const [isConnected, setConnected] = useState<boolean>(false);
   const [balance, setBalance] = useState<string>("");
   const [address, setAddress] = useState<string>("");
@@ -83,7 +83,7 @@ function Ethereum() {
   return (
     <Box className="ethereum-component">
       {hasError && (
-        <Alert variant="filled" severity="error">
+        <Alert variant="filled" severity="error" onClose={() => setHasError(false)}>
           {errorMessage}
         </Alert>
       )}
