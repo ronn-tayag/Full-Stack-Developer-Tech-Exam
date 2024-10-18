@@ -1,0 +1,37 @@
+Description:
+This application able to use to check for the ETH balance
+and check the gas price and block number. I also implement redis caching
+to lessen the API call. I set the TTL to 1 min.
+
+
+Setup .env 
+INFURA_API_KEY= <infura api key>
+
+To run on production mode:
+npm run build
+npm run start
+
+To run on development mode:
+npm run dev
+
+To test the response
+curl --request GET 'http://localhost:3000/ethereum/info/0x042523DB4F3Effc33d2742022B2490258494f8B3'
+
+Output:
+{
+    "gasPrice": "0.000000022406689425",
+    "blockNumber": 6882134,
+    "balance": "0.0002"
+}
+
+
+Prisma Commands:
+
+-for migration
+npx prisma migrate dev --name init
+
+-update model / table
+npx prisma generate
+
+-creaate migration
+npx prisma migrate dev --name init
