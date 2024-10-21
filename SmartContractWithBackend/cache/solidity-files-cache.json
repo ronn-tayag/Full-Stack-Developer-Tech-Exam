@@ -642,8 +642,8 @@
       ]
     },
     "/Users/ronnie/RonnieExam/Full-Stack-Developer-Tech-Exam/SmartContractWithBackend/contracts/Token.sol": {
-      "lastModificationDate": 1729523542177,
-      "contentHash": "d8b44c04c74c94c4a7b9553146ea80f5",
+      "lastModificationDate": 1729525095352,
+      "contentHash": "50877c0a304d49e76d348706a2e350ad",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.26",
